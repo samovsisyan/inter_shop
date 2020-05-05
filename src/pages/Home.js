@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Wrapper from "../components/Wrapper";
+import {Link} from "react-router-dom";
 
 class Home extends Component {
     render() {
@@ -12,3 +13,5 @@ class Home extends Component {
 }
 
 export default Home;
+
+

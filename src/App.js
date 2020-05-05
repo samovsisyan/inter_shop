@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Stocks from "./pages/Stocks";
 import News from "./pages/News";
+import Newcomers from "./pages/Newcomers";
 
 
 
@@ -20,6 +21,7 @@ class App extends Component {
                     <Route path="/" exact component={Home}/>
                     <Route path="/stocks" component={Stocks}/>
                     <Route path="/news" component={News}/>
+                    <Route path="/newcomers" component={Newcomers}/>
 
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />
