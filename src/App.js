@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import Stocks from "./pages/Stocks";
 import News from "./pages/News";
 import Newcomers from "./pages/Newcomers";
+import AboutUs from "./pages/AboutUs";
+import Contacts from "./pages/Contacts";
 
 
 
@@ -22,6 +24,8 @@ class App extends Component {
                     <Route path="/stocks" component={Stocks}/>
                     <Route path="/news" component={News}/>
                     <Route path="/newcomers" component={Newcomers}/>
+                    <Route path="/about_us" component={AboutUs}/>
+                    <Route path="/contacts" component={Contacts}/>
 
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />
