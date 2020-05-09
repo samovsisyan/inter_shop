@@ -9,10 +9,11 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Stocks from "./pages/Stocks";
 import News from "./pages/News";
-import Newcomers from "./pages/Newcomers";
+import Latest from "./pages/Latest";
 import AboutUs from "./pages/AboutUs";
 import Contacts from "./pages/Contacts";
 import Delivety from "./pages/Delivety";
+import Category from "./pages/Category";
 
 
 
@@ -24,10 +25,11 @@ class App extends Component {
                     <Route path="/" exact component={Home}/>
                     <Route path="/stocks" component={Stocks}/>
                     <Route path="/news" component={News}/>
-                    <Route path="/newcomers" component={Newcomers}/>
-                    <Route path="/about_us" component={AboutUs}/>
+                    <Route path="/latest" component={Latest}/>
+                    <Route path="/about-us" component={AboutUs}/>
                     <Route path="/contacts" component={Contacts}/>
                     <Route path="/delivety" component={Delivety}/>
+                    <Route path="/Category" component={Category}/>
 
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />

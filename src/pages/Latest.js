@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Wrapper from "../components/Wrapper";
 import {Link} from "react-router-dom";
 
-class Newcomers extends Component {
+class Latest extends Component {
     render() {
         return (
             <Wrapper>
@@ -611,4 +611,4 @@ class Newcomers extends Component {
     }
 }
 
-export default Newcomers;
+export default Latest;
