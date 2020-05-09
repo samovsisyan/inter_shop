@@ -16,6 +16,7 @@ import Delivety from "./pages/Delivety";
 import Category from "./pages/Category";
 import MyCart from "./pages/MyCart";
 import NewsSing from "./pages/NewsSing";
+import Product from "./pages/Product";
 
 
 
@@ -34,6 +35,7 @@ class App extends Component {
                     <Route path="/Category" component={Category}/>
                     <Route path="/my-cart" component={MyCart}/>
                     <Route path="/news-sing" component={NewsSing}/>
+                    <Route path="/product" component={Product}/>
 
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />
