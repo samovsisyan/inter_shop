@@ -123,9 +123,9 @@ class Contacts extends Component {
                                                      x="0px" y="0px"
                                                      viewBox="0 0 520 520" style={{enable_background: "new 0 0 520 520",
                                                     xml:"space=preserve"}}>
-                                                    {/*<style type="text/css">*/}
-                                                    {/*.st0{{stroke_width:8, stroke_miterlimit:10}}*/}
-                                                    {/*</style>*/}
+                                                    <style  type="text/css">
+                                                    .st0{{stroke_width:8, stroke_miterlimit:10}}
+                                                    </style>
                                                     <g>
                                                         <g>
                                                             <g>
