@@ -4,10 +4,19 @@ import PropTypes from 'prop-types';
 
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            openMenu: false
+        }
+    }
 
-
+    toggleMenu = () => {
+        this.setState({openMenu: !this.state.openMenu})
+    }
 
     render() {
+        console.log(this.state);
         return (
                 <header className="site-header">
                     <div className="top-line-wrapper">
@@ -195,8 +204,8 @@ class Header extends Component {
 
                             <div className="navigation">
 
-                                <div className="megamnu dropdown">
-                                    <div className="megamnu-button" data-toggle="dropdown" role="button">
+                                <div class={`megamnu dropdown ${this.state.openMenu ? 'megamnu dropdown open' : ''}`}>
+                                    <div onClick={this.toggleMenu}  className="megamnu-button" data-toggle="dropdown" role="button" >
                                         <h4 className="title">
 									<span className="btn-open-mobile home-page">
 										<span></span>
