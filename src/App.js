@@ -14,6 +14,7 @@ import AboutUs from "./pages/AboutUs";
 import Contacts from "./pages/Contacts";
 import Delivety from "./pages/Delivety";
 import Category from "./pages/Category";
+import MyCart from "./pages/MyCart";
 
 
 
@@ -30,6 +31,7 @@ class App extends Component {
                     <Route path="/contacts" component={Contacts}/>
                     <Route path="/delivety" component={Delivety}/>
                     <Route path="/Category" component={Category}/>
+                    <Route path="/my-cart" component={MyCart}/>
 
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />
