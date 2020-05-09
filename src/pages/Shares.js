@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import Wrapper from "../components/Wrapper";
 
-class Stocks extends Component {
+class Shares extends Component {
     render() {
         return (
             <Wrapper>
@@ -688,4 +688,4 @@ class Stocks extends Component {
     }
 }
 
-export default Stocks;
+export default Shares;

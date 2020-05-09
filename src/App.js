@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-import Stocks from "./pages/Stocks";
+import Shares from "./pages/Shares";
 import News from "./pages/News";
 import Latest from "./pages/Latest";
 import AboutUs from "./pages/AboutUs";
@@ -18,6 +18,8 @@ import MyCart from "./pages/MyCart";
 import NewsSing from "./pages/NewsSing";
 import Product from "./pages/Product";
 import Registr from "./pages/Registr";
+import Wishlist from "./pages/Wishlist";
+import Zakaz_1 from "./pages/Zakaz-1";
 
 
 
@@ -27,7 +29,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route path="/" exact component={Home}/>
-                    <Route path="/stocks" component={Stocks}/>
+                    <Route path="/shares" component={Shares}/>
                     <Route path="/news" component={News}/>
                     <Route path="/latest" component={Latest}/>
                     <Route path="/about-us" component={AboutUs}/>
@@ -38,6 +40,8 @@ class App extends Component {
                     <Route path="/news-sing" component={NewsSing}/>
                     <Route path="/product" component={Product}/>
                     <Route path="/registr" component={Registr}/>
+                    <Route path="/wishlist" component={Wishlist}/>
+                    <Route path="/zakaz-1" component={Zakaz_1}/>
 
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />
