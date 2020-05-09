@@ -235,12 +235,12 @@ class Header extends Component {
                                 <div className="nav-site-wrapp">
                                     <nav className="nav-site">
                                         <ul className="nav-site-mnu clearfix">
-                                            <li><Link to="popular.html">Популярное</Link ></li>
-                                            <li><Link to="shares.html">Акции</Link ></li>
-                                            <li><Link to="latest.html">Новинки</Link ></li>
-                                            <li><Link to="news.html">Новости</Link ></li>
-                                            <li><Link to="about-us.html">О нас</Link ></li>
-                                            <li><Link to="contacts.html">Контакты</Link ></li>
+                                            <li><Link to="/popular">Популярное</Link ></li>
+                                            <li><Link to="/shares">Акции</Link ></li>
+                                            <li><Link to="/latest">Новинки</Link ></li>
+                                            <li><Link to="/news">Новости</Link ></li>
+                                            <li><Link to="/about-us">О нас</Link ></li>
+                                            <li><Link to="/contacts">Контакты</Link ></li>
                                         </ul>
                                     </nav>
                                 </div>
