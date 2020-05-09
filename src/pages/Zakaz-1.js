@@ -10,7 +10,7 @@ class Zakaz1 extends Component {
                     <div className="container">
 
                         <div className="breadcrumbs">
-                            <a href="">Главная</a>
+                            <Link to="">Главная</Link>
                             <span className="item-trig"></span>
                             <span>Корзина</span>
                         </div>
@@ -22,11 +22,11 @@ class Zakaz1 extends Component {
                         <div className="zakaz-stages">
 
                             <div className="tab-nav-stage">
-                                <div className="stage active"><a href="zakaz-1.html"><span>Способ получения</span></a>
+                                <div className="stage active"><Link to="zakaz-1.html"><span>Способ получения</span></Link>
                                 </div>
-                                <div className="stage"><a href="zakaz-2.html"><span>Адрес доставки</span></a></div>
-                                <div className="stage"><a href="zakaz-3.html"><span>Способ оплаты</span></a></div>
-                                <div className="stage"><a href="zakaz-4.html"><span>Проверка заказа</span></a></div>
+                                <div className="stage"><Link to="zakaz-2.html"><span>Адрес доставки</span></Link></div>
+                                <div className="stage"><Link to="zakaz-3.html"><span>Способ оплаты</span></Link></div>
+                                <div className="stage"><Link to="zakaz-4.html"><span>Проверка заказа</span></Link></div>
                             </div>
 
                             <div className="stage-body">
@@ -54,12 +54,12 @@ class Zakaz1 extends Component {
                                                         <div className="jq-selectbox__trigger-arrow"></div>
                                                     </div>
                                                 </div>
-                                                <div className="jq-selectbox__dropdown" style="display: none;">
+                                                <div className="jq-selectbox__dropdown" style={{display: `none`}}>
                                                     <ul>
-                                                        <li className="selected sel" style="display: none;"></li>
-                                                        <li style="">Транспортной компанией (межгород)</li>
-                                                        <li style="">Доставка на дом (Москава)</li>
-                                                        <li style="">Самовывоз (Москва)</li>
+                                                        <li className="selected sel" style={{display: `none`}}></li>
+                                                        <li style={{}}>Транспортной компанией (межгород)</li>
+                                                        <li style={{}}>Доставка на дом (Москава)</li>
+                                                        <li style={{}}>Самовывоз (Москва)</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -69,7 +69,7 @@ class Zakaz1 extends Component {
                                     <div className="tab-content-z"></div>
 
                                     <div className="footer-form">
-                                        <a href="zakaz-2.html" className="btn-form-z">Продолжить</a>
+                                        <Link to="zakaz-2.html" className="btn-form-z">Продолжить</Link>
                                         <button className="btn-form-z hidden">Продолжить</button>
                                     </div>
 

@@ -20,6 +20,7 @@ import Product from "./pages/Product";
 import Registr from "./pages/Registr";
 import Wishlist from "./pages/Wishlist";
 import Zakaz_1 from "./pages/Zakaz-1";
+import Zakaz_2 from "./pages/Zakaz-2";
 
 
 
@@ -42,6 +43,7 @@ class App extends Component {
                     <Route path="/registr" component={Registr}/>
                     <Route path="/wishlist" component={Wishlist}/>
                     <Route path="/zakaz-1" component={Zakaz_1}/>
+                    <Route path="/zakaz-2" component={Zakaz_2}/>
 
                     <Route path="/header" component={Header} />
                     <Route path="/footer" component={Footer} />
