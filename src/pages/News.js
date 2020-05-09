@@ -188,11 +188,7 @@ class News extends Component {
 
                                             <div className="owl-stage-outer">
                                                 <div className="owl-stage"
-                                                     style={{
-                                                         transform: `translate3d(-555px, 0px, 0px)`,
-                                                         transition: `all 0s ease 0s`,
-                                                         width: 1665
-                                                     }}>
+                                                     style={{transform: `translate3d(-277, 0, 0)`, transition: `all 0.25s ease 0s`, width: 1665}}>
                                                     <div className="owl-item cloned" style={{width: 277.5}}>
                                                         <div className="product-row">
                                                             <div className="product-item">
@@ -200,7 +196,7 @@ class News extends Component {
                                                                     <div className="product-thumb">
                                                                         <div className="thumb-inner">
                                                                             <Link to=""><img src="img/home/p1.jpg"
-                                                                                             alt="p1"/></Link>
+                                                                                            alt="p1" /></Link>
                                                                         </div>
                                                                     </div>
                                                                     <div className="product-innfo">
@@ -218,7 +214,7 @@ class News extends Component {
                                                                     <div className="product-thumb">
                                                                         <div className="thumb-inner">
                                                                             <Link to=""><img src="img/home/p2.jpg"
-                                                                                             alt="p2"/></Link>
+                                                                                            alt="p2" /></Link>
                                                                         </div>
                                                                     </div>
                                                                     <div className="product-innfo">
@@ -236,7 +232,7 @@ class News extends Component {
                                                                     <div className="product-thumb">
                                                                         <div className="thumb-inner">
                                                                             <Link to=""><img src="img/home/p3.jpg"
-                                                                                             alt="p3"/></Link>
+                                                                                            alt="p3" /></Link>
                                                                         </div>
                                                                     </div>
                                                                     <div className="product-innfo">
@@ -253,7 +249,7 @@ class News extends Component {
                                                                     <div className="product-thumb">
                                                                         <div className="thumb-inner">
                                                                             <Link to=""><img src="img/home/p4.jpg"
-                                                                                             alt="p2"/></Link>
+                                                                                            alt="p2" /></Link>
                                                                         </div>
                                                                     </div>
                                                                     <div className="product-innfo">
@@ -268,19 +264,395 @@ class News extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                                    <div className="owl-item cloned active item-first item-last"
+                                                         style={{width: 277.5}}>
+                                                        <div className="product-row">
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p1.jpg"
+                                                                                            alt="p1" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Leather
+                                                                            Chelsea Boots</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p2.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p3.jpg"
+                                                                                            alt="p3" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Сумака
+                                                                            для спорта и отдыха</Link></div>
+                                                                        <span className="price price-dark">
+														<ins>$229.00</ins>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p4.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="owl-item" style={{width: 277.5}}>
+                                                        <div className="product-row">
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p1.jpg"
+                                                                                            alt="p1" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Leather
+                                                                            Chelsea Boots</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p2.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p3.jpg"
+                                                                                            alt="p3" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Сумака
+                                                                            для спорта и отдыха</Link></div>
+                                                                        <span className="price price-dark">
+														<ins>$229.00</ins>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p4.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="owl-item" style={{width: 277.5}}>
+                                                        <div className="product-row">
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p1.jpg"
+                                                                                            alt="p1" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Leather
+                                                                            Chelsea Boots</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p2.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p3.jpg"
+                                                                                            alt="p3" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Сумака
+                                                                            для спорта и отдыха</Link></div>
+                                                                        <span className="price price-dark">
+														<ins>$229.00</ins>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p4.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="owl-item cloned" style={{width: 277.5}}>
+                                                        <div className="product-row">
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p1.jpg"
+                                                                                            alt="p1" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Leather
+                                                                            Chelsea Boots</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p2.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p3.jpg"
+                                                                                            alt="p3" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Сумака
+                                                                            для спорта и отдыха</Link></div>
+                                                                        <span className="price price-dark">
+														<ins>$229.00</ins>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p4.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="owl-item cloned" style={{width: 277.5}}>
+                                                        <div className="product-row">
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p1.jpg"
+                                                                                            alt="p1" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Leather
+                                                                            Chelsea Boots</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p2.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p3.jpg"
+                                                                                            alt="p3" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">Сумака
+                                                                            для спорта и отдыха</Link></div>
+                                                                        <span className="price price-dark">
+														<ins>$229.00</ins>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="product-item">
+                                                                <div className="product-inner clearfix">
+                                                                    <div className="product-thumb">
+                                                                        <div className="thumb-inner">
+                                                                            <Link to=""><img src="img/home/p4.jpg"
+                                                                                            alt="p2" /></Link>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="product-innfo">
+                                                                        <div className="product-name"><Link to="">2750
+                                                                            Cotu Classic Sneakers</Link></div>
+                                                                        <span className="price">
+														<ins>3 000.00 руб.</ins>
+														<del>2 500.00 руб.</del>
+													</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div className="owl-nav">
+                                                <div className="owl-prev"><i className="fa fa-angle-left"></i></div>
+                                                <div className="owl-next"><i className="fa fa-angle-right"></i></div>
+                                            </div>
+                                            <div className="owl-dots disabled"></div>
                                         </div>
-                                    </div>
-                                    <div className="owl-nav">
-                                        <div className="owl-prev"><i className="fa fa-angle-left"></i></div>
-                                        <div className="owl-next"><i className="fa fa-angle-right"></i></div>
-                                    </div>
-                                    <div className="owl-dots disabled"></div>
-                                </div>
 
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
