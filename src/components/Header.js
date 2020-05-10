@@ -9,7 +9,8 @@ class Header extends Component {
         super(props);
         this.state = {
             openMenu: false,
-            openLeng: false
+            openLeng: true,
+            openCurrency: true,
 
         }
     }
@@ -22,6 +23,9 @@ class Header extends Component {
         this.setState({openLeng: !this.state.openLeng})
     }
 
+    toggleCurrency = () => {
+        this.setState({openCurrency: !this.state.openCurrency})
+    }
 
     render() {
         console.log(this.state);
@@ -42,9 +46,9 @@ class Header extends Component {
 
                                     <ul className="nav-top-left">
                                         <li>
-                                            <div className="currency-selector dropdown">
+                                            <div onClick={this.toggleCurrency} className={`${this.state.openCurrency ? "currency-selector dropdown" : "currency-selector dropdown open"}`}>
                                                 <span className="expand-more dropdown-button-tl" data-toggle="dropdown"
-                                                      aria-expanded="false">Рубли ₽</span>
+                                                      aria-expanded={`${this.state.openCurrency ? "false" : "true"}`}>Рубли ₽</span>
                                                 <ul className="dropdown-menu">
                                                     <li className="current">
                                                         <Link title="Рубли" rel="nofollow" to=""
@@ -64,7 +68,7 @@ class Header extends Component {
                                         <li>
                                             <div onClick={this.toggleLeng} className={`${this.state.openLeng ? "site-lng dropdown" : "site-lng dropdown open"}`}>
                                                 <div className="button-lng-box dropdown-button-tl"
-                                                     data-toggle="dropdown" role="button" aria-expanded="false">Русский
+                                                     data-toggle="dropdown" role="button" aria-expanded={`${this.state.openLeng ? "false" : "true"}`}>Русский
                                                 </div>
                                                 <div className="lng-box-hiiden-wrapp dropdown-menu dropdown-box-s-wrap">
                                                     <div className="lng-box-hiiden dropdown-box-s">
