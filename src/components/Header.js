@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import PropTypes from 'prop-types';
+import Wrapper from "./Wrapper";
 
 
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            openMenu: false
+            openMenu: false,
+            openLeng: false
+
         }
     }
 
@@ -15,30 +18,21 @@ class Header extends Component {
         this.setState({openMenu: !this.state.openMenu})
     }
 
+    toggleLeng = () => {
+        this.setState({openLeng: !this.state.openLeng})
+    }
+
+
     render() {
         console.log(this.state);
         return (
             <header class="home-page">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div id="my-page">
                     <div className="site-header">
                         <div className="top-line-wrapper">
                             <div className="container">
 
-                                <div className="top-line">
+                                <div className="top-line clearfix">
 
                                     <button className="hamburger hamburger--squeeze" type="button">
 								<span className="hamburger-box">
@@ -46,36 +40,49 @@ class Header extends Component {
 								</span>
                                     </button>
 
-                                    <span className="top-priv">Добро пожаловать на Yourlogo!</span>
-
-                                    <ul className="nav-top-right">
-                                        <li><Link to="#" className="title-pages">Оплата и доставка</Link></li>
-
+                                    <ul className="nav-top-left">
                                         <li>
-                                            <div className="site-lng dropdown">
-                                                <div className="button-lng-box" data-toggle="dropdown"
-                                                     role="button">Русский<i
-                                                    className="fa fa-angle-down"></i></div>
+                                            <div className="currency-selector dropdown">
+                                                <span className="expand-more dropdown-button-tl" data-toggle="dropdown"
+                                                      aria-expanded="false">Рубли ₽</span>
+                                                <ul className="dropdown-menu">
+                                                    <li className="current">
+                                                        <Link title="Рубли" rel="nofollow" to=""
+                                                           className="dropdown-item">РУБЛИ ₽</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link title="Euro" rel="nofollow" to=""
+                                                           className="dropdown-item">EUR €</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link title="US Dollar" rel="nofollow" to=""
+                                                           className="dropdown-item">USD $</Link>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div onClick={this.toggleLeng} className={`${this.state.openLeng ? "site-lng dropdown" : "site-lng dropdown open"}`}>
+                                                <div className="button-lng-box dropdown-button-tl"
+                                                     data-toggle="dropdown" role="button" aria-expanded="false">Русский
+                                                </div>
                                                 <div className="lng-box-hiiden-wrapp dropdown-menu dropdown-box-s-wrap">
                                                     <div className="lng-box-hiiden dropdown-box-s">
                                                         <span className="hide-lng"><i
                                                             className="fa fa-long-arrow-left"></i> Назад</span>
                                                         <ul>
                                                             <li className="active"><Link to="#"
-                                                                                         target="_blank">Русский<span>Русский</span></Link>
+                                                                                      target="_blank">Русский<span>Русский</span></Link>
                                                             </li>
                                                             <li><Link to="#">English<span>Английский</span></Link></li>
                                                             <li><Link to="#">Deutsch<span>Немецкий</span></Link></li>
-                                                            <li><Link to="#">Français<span>Французский</span></Link>
-                                                            </li>
+                                                            <li><Link to="#">Français<span>Французский</span></Link></li>
                                                             <li><Link to="#">Español<span>Испанский</span></Link></li>
                                                             <li><Link to="#">中國<span>Китайский</span></Link></li>
                                                             <li><Link to="#">한국의<span>Корейский</span></Link></li>
                                                             <li><Link to="#">日本の<span>Японский</span></Link></li>
-                                                            <li><Link to="#">Italiano<span>Итальянский</span></Link>
-                                                            </li>
-                                                            <li><Link to="#">Português<span>Португальский</span></Link>
-                                                            </li>
+                                                            <li><Link to="#">Italiano<span>Итальянский</span></Link></li>
+                                                            <li><Link to="#">Português<span>Португальский</span></Link></li>
                                                             <li><Link to="#">العربية<span>Арабский</span></Link></li>
                                                             <li><Link to="#">Nederlands<span>Нидерландский</span></Link>
                                                             </li>
@@ -86,13 +93,16 @@ class Header extends Component {
                                                 </div>
                                             </div>
                                         </li>
+                                        <li><span className="top-priv">Добро пожаловать на Yourlogo!</span></li>
+                                    </ul>
 
+                                    <ul className="nav-top-right">
+                                        <li><Link to="#" className="title-pages">Оплата и доставка</Link></li>
                                         <li>
-                                            <Link to="#" className="reg-or-sign hidden-xs"><i
-                                                className="fa fa-user"></i>Регистрация
-                                                / Вход</Link>
-                                            <Link to="#" className="ref-or-sign-mobile visible-xs">
-                                                <img src="img/header/profile.svg" alt="alt"/>
+                                            <Link to="#sign_in" className="reg-or-sign hidden-xs popup_content"><i
+                                                className="fa fa-user"></i>Регистрация / Вход</Link>
+                                            <Link to="#sign_in" className="ref-or-sign-mobile visible-xs popup_content">
+                                                <img src="img/header/profile.svg" alt="alt" />
                                             </Link>
                                         </li>
                                     </ul>
@@ -190,9 +200,9 @@ class Header extends Component {
                                                                 <span className="price">24 000.00 руб</span>
                                                             </div>
                                                             <div className="actions">
-                                                                <Link className="btn btn-viewcart" href="my-cart.html">В
+                                                                <Link className="btn btn-viewcart" to="my-cart.html">В
                                                                     корзину</Link>
-                                                                <Link className="btn btn-checkout" href="">Оформить
+                                                                <Link className="btn btn-checkout" to="">Оформить
                                                                     заказ</Link>
                                                             </div>
                                                         </div>
